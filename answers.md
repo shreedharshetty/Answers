@@ -67,12 +67,12 @@ the two:
     
         o.a ==> 1
         o[ a ] ==> 1.0
-        o.a == o.b ==> true
-        o.a === o.b ==> false
+        o.a == o.b ==> true // == will not make the type check
+        o.a === o.b ==> false // integer 1 is not same as string 1.0
         o.b == o.d ==> true // string comparison with boolean true always return true // if we use === returns false
         o.a === o.d ==> false // here type check also happens
-        o.c ? "a" : "b" ==> "b"
-        o.e ==> undefined as key 'e' is not present in the o
+        o.c ? "a" : "b" ==> "b" // o.c is false so else block will execute
+        o.e ==> undefined  // as key 'e' is not present in the o
         o.e === null ==> false
         o.e != null ==> false
 
@@ -111,8 +111,26 @@ as an opportunity to tell us something you like about the app, and something
 that you think should change or which could be done better. Please limit your
 response to 500 characters or, if responding with a video, 30 seconds.
 
+Answer : 
+	Sign in button seems so dull when it is disabled, UI needs some more charm, as i see header seems so dull.
+	In the conversation page, form controls need to be buttons.
+	Page looks so plain.
+	wouldn't it be better if we place the logo in top as usual? or is there a specific reason to place logo in the bottom?
+	Width of the page also looks less.
+	About us page is asking me to login again though i am logged in.
+	Design of the about-us page is looking little nice than landing page.
+
+
+
 6. After you've used the app a little bit, step back and think about it in the
 world at large. How would you use it? How would you explain it to other people
 in 2 sentences? If you had to sell it as a productivity tool, who would you sell
 it to (Nurses and doctors? Construction companies? Retail store managers?)
 Please limit your answer to 500 characters.
+
+Answer : 
+	I would like to use it to broadcast my friends and family about my status, place and share the video with them.
+	I would like to explain it to my friends/family like dispatch.tv is personalized socialize platform to share what i have discovered.
+	It can also be used in a team of developers, where they can share all the excitements of writing cool stuff.
+	
+	
